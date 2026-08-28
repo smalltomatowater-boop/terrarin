@@ -1,3 +1,5 @@
+**日本語** | [English](README.en.md)
+
 # てらりん (terrarin)
 
 複数AIキャラクターの自律会話オーケストレーター
