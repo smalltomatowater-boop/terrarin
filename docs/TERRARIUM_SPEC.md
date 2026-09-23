@@ -291,7 +291,7 @@ LINORIN本体は7エンジン（Gemini/ChatGPT/OpenRouter/Anthropic/Grok/GLM/さ
 | TERRARIUM_ENABLED | toggle | FALSE | テラリウム有効化 |
 | TERRARIUM_CHANNEL_ID | text | - | Slackチャンネル ID |
 | GEMINI_API_KEY | text | - | Google AI Studio APIキー |
-| GEMINI_MODEL | text | gemini-2.0-flash | Geminiモデル名 |
+| GEMINI_MODEL | text | gemini-flash-latest | Geminiモデル名 |
 | SAKURA_ACCESS_TOKEN | text | - | さくらのAI APIトークン |
 | SAKURA_MODEL | text | - | さくらのAIモデル名 |
 | TERRARIUM_MIN_MESSAGES | number | 1 | 参加開始の最低メッセージ数 |

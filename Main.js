@@ -125,7 +125,7 @@ const _TERA_DEFAULT_CONFIG_ = [
   ["SLACK_BOT_TOKEN", ""],
   ["TERRARIUM_CHANNEL_ID", ""],
   ["GEMINI_API_KEY", ""],
-  ["GEMINI_MODEL", "gemini-2.0-flash"],
+  ["GEMINI_MODEL", "gemini-flash-latest"],
   ["GEMINI_FALLBACK_MODEL", ""],
   ["SAKURA_ACCESS_TOKEN", ""],
   ["SAKURA_MODEL", ""],
@@ -286,7 +286,7 @@ function callGemini(message, modelOverride, userId, imageBase64, temperature) {
     if (json.error || status >= 400) {
       Logger.log("[Gemini] ERROR status=" + status + " model=" + useModel + " err=" + JSON.stringify(json.error || rawBody.slice(0, 200)));
       if (status === 404 && !modelOverride) {
-        const fallbackModel = "gemini-2.0-flash";
+        const fallbackModel = "gemini-flash-latest";
         Logger.log("[Gemini] 404: model deprecated, retry with " + fallbackModel);
         return callGemini(message, fallbackModel, userId, imageBase64, temperature);
       }
